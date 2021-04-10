@@ -252,8 +252,8 @@ const Landing = () => {
                 src={Feature1}
                 alt="feature"
                 className="img-fluid"
-                width="500"
-                height="500"
+                width="400"
+                height="400"
               />
             </div>
           </div>
@@ -286,8 +286,8 @@ const Landing = () => {
                 src={Feature2}
                 alt="feature"
                 className="img-fluid"
-                width="500"
-                height="500"
+                width="400"
+                height="400"
               />
             </div>
           </div>
@@ -314,8 +314,8 @@ const Landing = () => {
                 src={Feature3}
                 alt="feature"
                 className="img-fluid"
-                width="500"
-                height="500"
+                width="400"
+                height="400"
               />
             </div>
           </div>
