@@ -9,7 +9,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
-  min-height: 210vh;
+  min-height: 110vh;
 }
 
 /* navbar */
@@ -191,14 +191,15 @@ video:focus {
   margin-top: 50px;
   /* background-attachment: fixed; */
 }
-.about-us {
-  width: 100%;
+.about-text {
+  /* width: 100%; */
   background: #0099ff;
+  padding: 100px 100px;
 }
 
-.about-text {
-  color: white;
-  font-size: 25px;
-  font-family: sans-serif;
-  /* line-height: 2rem; */
+/* footer */
+.footer img:hover {
+  transform: translateY(-5px);
+  transition-duration: 0.3s;
+  transition: ease-in-out;
 }

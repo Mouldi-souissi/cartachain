@@ -5,6 +5,9 @@ import arrow from "../assets/arrow.gif";
 import Feature1 from "../assets/f1.svg";
 import Feature2 from "../assets/f2.svg";
 import Feature3 from "../assets/f3.svg";
+import facebook from "../assets/facebook.png";
+import insta from "../assets/insta.png";
+import twitter from "../assets/twitter.png";
 
 const Landing = () => {
   useEffect(() => {
@@ -106,10 +109,7 @@ const Landing = () => {
       <section className="services album mb-5 mt-0" id="services">
         <div className="container">
           <div className="text-center" style={{ marginBottom: "80px" }}>
-            <h2
-              className="section-heading text-uppercase text-secondary pt-5 display-4"
-              // style={{ fontSize: "50px" }}
-            >
+            <h2 className="section-heading text-uppercase text-secondary pt-5 display-4">
               Services
             </h2>
           </div>
@@ -218,11 +218,13 @@ const Landing = () => {
         </div>
       </section>
       {/* about us */}
-      <section className="about-us">
+      <section className="about-us pb-5">
+        <div className="display-4 text-center text-white about-text">
+          ABOUT US
+        </div>
         <div className="container">
-          <div className="display-4 text-center text-white py-5">ABOUT US</div>
           <div
-            className="row featurette d-flex align-items-center mt-5 card py-5 shadow-lg"
+            className="row featurette d-flex align-items-center mt-5"
             data-aos="fade-left"
             style={{ marginBottom: "100px", borderRadius: "20px" }}
           >
@@ -245,7 +247,7 @@ const Landing = () => {
                 processes, adapt, innovate and lead through Blockchain.
               </p>
             </div>
-            <div className="col-md-5 mb-5">
+            <div className="col-md-5 my-auto">
               <img
                 src={Feature1}
                 alt="feature"
@@ -257,7 +259,7 @@ const Landing = () => {
           </div>
 
           <div
-            className="row featurette d-flex align-items-center card py-5 shadow-lg"
+            className="row featurette d-flex align-items-center"
             data-aos="fade-right"
             style={{ marginBottom: "100px", borderRadius: "20px" }}
           >
@@ -279,7 +281,7 @@ const Landing = () => {
                 most importantly with your customers.
               </p>
             </div>
-            <div className="col-md-5 order-md-1 mb-5">
+            <div className="col-md-5 order-md-1 mb-5 my-auto">
               <img
                 src={Feature2}
                 alt="feature"
@@ -291,7 +293,7 @@ const Landing = () => {
           </div>
 
           <div
-            className="row featurette d-flex align-items-center mb-5 card py-5 shadow-lg"
+            className="row featurette d-flex align-items-center mb-5"
             data-aos="fade-left"
             style={{ borderRadius: "20px" }}
           >
@@ -307,7 +309,7 @@ const Landing = () => {
                 they’re more reliable than traditional applications.
               </p>
             </div>
-            <div className="col-md-5 mt-5">
+            <div className="col-md-5 mt-5 my-auto">
               <img
                 src={Feature3}
                 alt="feature"
@@ -319,6 +321,70 @@ const Landing = () => {
           </div>
         </div>
       </section>
+      {/* footer */}
+      <footer className="footer bg-dark py-5">
+        {/* <hr className="mt-0" /> */}
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-lg-6 my-auto h-100 text-center">
+              <ul className="list-inline mb-2">
+                <li className="list-inline-item mr-3">
+                  <a href="/License" className="text-white">
+                    License Agreement
+                  </a>
+                </li>
+
+                <li className="list-inline-item mr-3">
+                  <a href="/TermsOfUse" className="text-white">
+                    Terms of Use
+                  </a>
+                </li>
+
+                <li className="list-inline-item">
+                  <a href="/PrivacyPolicy" className="text-white">
+                    Privacy Policy
+                  </a>
+                </li>
+              </ul>
+              <p className="small mb-4 mb-lg-0 text-white">
+                © Cartachain 2021. All Rights Reserved.
+              </p>
+            </div>
+            <div className="col-lg-6 my-auto h-100 text-center">
+              <ul className="list-inline mb-0">
+                <li className="list-inline-item">
+                  <a href="https://www.facebook.com">
+                    {/* <i className="fa fa-facebook fa-2x fa-fw"></i> */}
+                    <img
+                      src={facebook}
+                      height="60px"
+                      width="60px"
+                      alt="facebbok"
+                    />
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href=" https://twitter.com/">
+                    {/* <i className="fa fa-twitter fa-2x fa-fw"></i> */}
+                    <img
+                      src={twitter}
+                      height="60px"
+                      width="60px"
+                      alt="twitter"
+                    />
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="https://www.instagram.com/">
+                    {/* <i className="fa fa-instagram fa-2x fa-fw"></i> */}
+                    <img src={insta} height="60px" width="60px" alt="insta" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
