@@ -8,28 +8,26 @@ import Feature3 from "../assets/f3.svg";
 import facebook from "../assets/facebook.png";
 import insta from "../assets/insta.png";
 import twitter from "../assets/twitter.png";
+import network from "../assets/network.mp4";
 
 const Landing = () => {
+  // video auto play
   useEffect(() => {
-    // navbar transparent
-    var myNav = document.querySelector(".navbar");
-    window.onscroll = function () {
-      if (
-        document.body.scrollTop >= 200 ||
-        document.documentElement.scrollTop >= 200
-      ) {
-        myNav.classList.add("active");
-      } else {
-        myNav.classList.remove("active");
+    window.addEventListener("load", async () => {
+      let video = document.getElementById("videoId");
+      try {
+        await video.play();
+      } catch (err) {
+        video.controls = true;
       }
-    };
+    });
   }, []);
   return (
     <div>
       {/* navbar */}
       <header className="header">
         <nav className="navbar navbar-expand-lg fixed-top py-3">
-          <div className="container">
+          <div className="container ">
             <a
               href="/"
               className="navbar-brand text-uppercase font-weight-bold"
@@ -90,17 +88,37 @@ const Landing = () => {
           </div>
         </nav>
       </header>
-      <section className="hero text-center d-flex align-items-center mt-0">
+      <section className="hero text-center d-flex align-items-center justify-content-center mb-5">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div className="display-4  hero-text">
+            <div className="hero-video mx-auto">
+              <video
+                playsinline
+                autoplay
+                muted="true"
+                loop
+                className="bgvideo"
+                width="x"
+                height="y"
+                id="videoId"
+                border="none"
+              >
+                <source src={network} type="video/mp4" />
+              </video>
+            </div>
+            <div
+              className="col-lg-12 col-md-12 col-sm-12 col-xs-12 position-absolute"
+              style={{ top: "50%" }}
+            >
+              <div className="display-4 hero-text">
                 This is the revolution
                 <hr className="h-line mb-3 w-50 mx-auto" />
               </div>
-              <a href="/" id="btn-gra" className="btn-gra shadow-lg">
-                join us
-              </a>
+              <div className="position-relative mx-auto col-md-3">
+                <a href="/" id="btn-gra" className="btn-gra shadow-lg">
+                  join us
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -109,14 +127,14 @@ const Landing = () => {
       <section className="services album mb-5 mt-0" id="services">
         <div className="container">
           <div className="text-center" style={{ marginBottom: "80px" }}>
-            <h2 className="section-heading text-uppercase text-secondary pt-5 display-4">
-              Services
+            <h2 className="section-heading  text-black pt-5 display-4">
+              SERVICES
             </h2>
           </div>
           <div className="row mt-5">
             <div className="col-md-4">
               <div
-                className="card mb-4 shadow p-4"
+                className="card mb-4 shadow p-4 effect"
                 style={{ borderRadius: "20px" }}
                 data-aos="zoom-in"
               >
@@ -125,7 +143,7 @@ const Landing = () => {
                   aria-hidden="true"
                 />
                 <div className="card-body">
-                  <h4 className="mb-3 text-center">E-Commerce</h4>
+                  <h4 className="mb-3 text-center">Expand your business</h4>
                   <p className="text-muted">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Minima maxime quam architecto quo inventore harum ex magni,
@@ -145,7 +163,7 @@ const Landing = () => {
                   aria-hidden="true"
                 />
                 <div className="card-body">
-                  <h4 className="mb-3 text-center">Responsive Design</h4>
+                  <h4 className="mb-3 text-center">DApp development</h4>
                   <p className="text-muted">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Minima maxime quam architecto quo inventore harum ex magni,
@@ -166,7 +184,7 @@ const Landing = () => {
                   aria-hidden="true"
                 />
                 <div className="card-body">
-                  <h4 className="mb-3 text-center">Web Security</h4>
+                  <h4 className="mb-3 text-center">Blockchain Consulting</h4>
                   <p className="text-muted">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Minima maxime quam architecto quo inventore harum ex magni,
@@ -218,27 +236,42 @@ const Landing = () => {
         </div>
       </section>
       {/* about us */}
-      <section className="about-us pb-5">
-        <div className="display-4 text-center text-white about-text">
-          ABOUT US
-        </div>
+      <section className="about-us pb-5 position-relative">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          className="wave2"
+        >
+          <path
+            fill="#0099ff"
+            fill-opacity="1"
+            d="M0,224L40,202.7C80,181,160,139,240,138.7C320,139,400,181,480,208C560,235,640,245,720,218.7C800,192,880,128,960,133.3C1040,139,1120,213,1200,218.7C1280,224,1360,160,1400,128L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+          ></path>
+        </svg>
+
         <div className="container">
+          <div
+            className="display-4 text-center text-black about-text"
+            style={{ marginBottom: "100px" }}
+          >
+            ABOUT US
+          </div>
           <div
             className="row featurette d-flex align-items-center mt-5"
             data-aos="fade-left"
             style={{ marginBottom: "100px", borderRadius: "20px" }}
           >
             <div className="col-md-7 order-md-2">
-              <h2 className="featurette-heading mb-5 text-muted text-center font-weight-bold ">
+              <h2 className="featurette-heading mb-5 text-primary text-center font-weight-bold ">
                 Expand your business
               </h2>
-              <p className="lead ">
+              <p className="lead text-justify">
                 In carthachain we offer every startup the opportunity to expand
                 their business and turn its ideas into reality by launching a
                 raise fund from everyone and even from foreign investors through
                 our decentralized platforms.
               </p>
-              <p className="lead mb-5">
+              <p className="lead mb-5 text-justify">
                 Organizations keep embracing the blockchain development services
                 for security, transparency, and traceability that this
                 technology offers. We help startups and corporate clients build
@@ -264,14 +297,14 @@ const Landing = () => {
             style={{ marginBottom: "100px", borderRadius: "20px" }}
           >
             <div className="col-md-7 order-md-2">
-              <h2 className="featurette-heading text-muted font-weight-bold mb-5 text-center">
+              <h2 className="featurette-heading text-primary font-weight-bold mb-5 text-center">
                 Blockchain Consulting
               </h2>
-              <p className="lead">
+              <p className="lead text-justify">
                 Free consultation with our devs on effective engagement of the
                 Blockchain to enhance the potential of your business.
               </p>
-              <p className="lead mb-5">
+              <p className="lead mb-5 text-justify">
                 We help startups and corporate clients build secure, trusted and
                 decentralized environments using Blockchain. We help our clients
                 adopt the newest technologies to optimize processes, adapt,
@@ -298,10 +331,10 @@ const Landing = () => {
             style={{ borderRadius: "20px" }}
           >
             <div className="col-md-7">
-              <h2 className="featurette-heading text-muted font-weight-bold text-center mb-5">
+              <h2 className="featurette-heading text-primary font-weight-bold text-center mb-5">
                 DApp development
               </h2>
-              <p className="lead mb-5">
+              <p className="lead mb-5 text-justify">
                 All it takes from you is just an idea. CarthaDevs can translate
                 your big ideas into reliable and robust code. We will design and
                 publish any decentralized apps based on your requirements in a
@@ -322,7 +355,7 @@ const Landing = () => {
         </div>
       </section>
       {/* footer */}
-      <footer className="footer bg-dark py-5">
+      <footer className="footer bg-primary py-5">
         {/* <hr className="mt-0" /> */}
         <div className="container-fluid">
           <div className="row">
