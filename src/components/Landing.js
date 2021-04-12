@@ -103,6 +103,7 @@ const Landing = () => {
                 height="y"
                 id="videoId"
                 border="none"
+                poster="true"
               >
                 <source src={network} type="video/mp4" />
               </video>
@@ -262,7 +263,7 @@ const Landing = () => {
             data-aos="fade-left"
             style={{ marginBottom: "100px", borderRadius: "20px" }}
           >
-            <div className="col-md-7 order-md-2">
+            <div className="col-md-7">
               <h2 className="featurette-heading mb-5 text-primary text-center font-weight-bold ">
                 Expand your business
               </h2>
