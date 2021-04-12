@@ -78,6 +78,13 @@ body {
 .hero-text {
   text-shadow: 1px 2px rgba(0, 0, 0, 0.5);
 }
+.hero-bg {
+  background: rgba(255, 255, 255, 0.8);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* filter: blur(20px); */
+}
+
 /* .hero {
   background: url("./assets/hero3.jpg");
   background-repeat: no-repeat;
@@ -217,8 +224,8 @@ video:focus {
 }
 
 /* footer */
+
 .footer img:hover {
   transform: translateY(-5px);
-  transition-duration: 0.3s;
-  transition: ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }

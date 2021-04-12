@@ -88,6 +88,7 @@ const Landing = () => {
           </div>
         </nav>
       </header>
+      {/* hero */}
       <section className="hero text-center d-flex align-items-center justify-content-center mb-5">
         <div className="container-fluid">
           <div className="row">
@@ -107,7 +108,7 @@ const Landing = () => {
               </video>
             </div>
             <div
-              className="col-lg-12 col-md-12 col-sm-12 col-xs-12 position-absolute"
+              className="col-lg-12 col-md-12 col-sm-12 col-xs-12 position-absolute hero-bg"
               style={{ top: "50%" }}
             >
               <div className="display-4 hero-text">
@@ -355,7 +356,7 @@ const Landing = () => {
         </div>
       </section>
       {/* footer */}
-      <footer className="footer bg-primary py-5">
+      <footer className="footer bg-dark py-4">
         {/* <hr className="mt-0" /> */}
         <div className="container-fluid">
           <div className="row">
