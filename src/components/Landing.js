@@ -9,6 +9,7 @@ import facebook from "../assets/facebook.png";
 import insta from "../assets/insta.png";
 import twitter from "../assets/twitter.png";
 import network from "../assets/network.mp4";
+import contact from "../assets/contact.jpg";
 
 const Landing = () => {
   // video auto play
@@ -67,14 +68,14 @@ const Landing = () => {
                     About
                   </a>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <a
                     href="/"
                     className="nav-link text-uppercase font-weight-bold"
                   >
                     Gallery
                   </a>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <a
                     href="/"
@@ -116,11 +117,14 @@ const Landing = () => {
                 This is the revolution
                 <hr className="h-line mb-3 w-50 mx-auto" />
               </div>
-              <div className="position-relative mx-auto col-md-3">
+              {/* <div className="position-relative mx-auto ">
                 <a href="/" id="btn-gra" className="btn-gra shadow-lg">
                   join us
                 </a>
-              </div>
+              </div> */}
+              <button className="btn mx-auto custom-btn font-weight-bold shadow-sm">
+                JOIN US
+              </button>
             </div>
           </div>
         </div>
@@ -129,12 +133,10 @@ const Landing = () => {
       <section className="services album mb-5 mt-0" id="services">
         <div className="container">
           <div className="text-center" style={{ marginBottom: "80px" }}>
-            <h2 className="section-heading  text-black pt-5 display-4">
-              SERVICES
-            </h2>
+            <h2 className="section-heading pt-5 display-4">SERVICES</h2>
           </div>
           <div className="row mt-5">
-            <div className="col-md-4">
+            <div className="col-lg-4">
               <div
                 className="card mb-4 shadow p-4 effect"
                 style={{ borderRadius: "20px" }}
@@ -154,7 +156,7 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-lg-4">
               <div
                 className="card mb-4 shadow p-4"
                 style={{ borderRadius: "20px" }}
@@ -175,7 +177,7 @@ const Landing = () => {
               </div>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-lg-4">
               <div
                 className="card mb-4 shadow p-4"
                 style={{ borderRadius: "20px" }}
@@ -217,7 +219,7 @@ const Landing = () => {
                 style={{ marginLeft: "50px" }}
               />
             </div>
-            <div className="col-md-6 video-container" data-aos="fade-in">
+            <div className="video-container" data-aos="fade-in">
               <img src={monitor} className="monitor" alt="laptop" />
               <video controls className="video">
                 <source src={video} type="video/mp4" />
@@ -264,7 +266,7 @@ const Landing = () => {
             style={{ marginBottom: "100px", borderRadius: "20px" }}
           >
             <div className="col-md-7">
-              <h2 className="featurette-heading mb-5 text-primary text-center font-weight-bold ">
+              <h2 className="featurette-heading mb-5 font-weight-bold ">
                 Expand your business
               </h2>
               <p className="lead text-justify">
@@ -299,7 +301,7 @@ const Landing = () => {
             style={{ marginBottom: "100px", borderRadius: "20px" }}
           >
             <div className="col-md-7 order-md-2">
-              <h2 className="featurette-heading text-primary font-weight-bold mb-5 text-center">
+              <h2 className="featurette-heading  font-weight-bold mb-5 ">
                 Blockchain Consulting
               </h2>
               <p className="lead text-justify">
@@ -333,9 +335,10 @@ const Landing = () => {
             style={{ borderRadius: "20px" }}
           >
             <div className="col-md-7">
-              <h2 className="featurette-heading text-primary font-weight-bold text-center mb-5">
+              <h2 className="featurette-heading font-weight-bold mb-5">
                 DApp development
               </h2>
+
               <p className="lead mb-5 text-justify">
                 All it takes from you is just an idea. CarthaDevs can translate
                 your big ideas into reliable and robust code. We will design and
@@ -352,6 +355,85 @@ const Landing = () => {
                 width="400"
                 height="400"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* contact us */}
+      <section className="contact-us mb-5">
+        <div className="container-fluid  pb-5">
+          <h2
+            class="heading text-center display-4"
+            style={{ marginBottom: "100px" }}
+          >
+            CONTACT-US
+          </h2>
+          <div className="row">
+            <div className="col-lg-6">
+              <img
+                src={contact}
+                alt="contact"
+                className="img-responsive mb-5 rounded"
+                width="500px"
+              />
+            </div>
+            <div className="col-lg-6">
+              <form
+                id="contact-form"
+                method="post"
+                action="#"
+                class="contact-form"
+              >
+                <div class="controls">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="name">Your firstname *</label>
+                        <input
+                          type="text"
+                          name="name"
+                          placeholder="Enter your firstname"
+                          required="required"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="surname">Your lastname *</label>
+                        <input
+                          type="text"
+                          name="surname"
+                          placeholder="Enter your  lastname"
+                          required="required"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="surname">Your email *</label>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Enter your  email"
+                      required="required"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="surname">Your message for us *</label>
+                    <textarea
+                      rows="4"
+                      name="message"
+                      placeholder="Enter your message"
+                      required="required"
+                      class="form-control"
+                    ></textarea>
+                  </div>
+                  <button className="btn custom-btn shadow-sm">Send</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
