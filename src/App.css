@@ -203,10 +203,14 @@ video:focus {
   margin-top: 50px;
 }
 .services .card {
-  transform: skewX(-2deg) skewY(-2deg) !important;
+  transform: skewX(-5deg) skewY(-5deg) !important;
+  transition: transform 2s;
 }
 .services .card-body {
-  transform: skewX(2deg) skewY(2deg) !important;
+  transform: skewX(5deg) skewY(5deg) !important;
+}
+.services .fa-link {
+  transform: rotate(90deg);
 }
 
 /* footer */
@@ -235,7 +239,7 @@ video:focus {
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid rgba(128, 128, 128, 0.425);
-  box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.281);
+  box-shadow: 2px 4px 5px rgba(128, 128, 128, 0.281);
 }
 
 .contact-img-container {

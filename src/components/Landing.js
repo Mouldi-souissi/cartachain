@@ -10,6 +10,7 @@ import insta from "../assets/insta.png";
 import twitter from "../assets/twitter.png";
 import network from "../assets/network.mp4";
 import contact from "../assets/contact2.jpg";
+// import s1 from "../assets/s1.gif";
 
 const Landing = () => {
   // video auto play
@@ -95,9 +96,9 @@ const Landing = () => {
           <div className="row">
             <div className="hero-video mx-auto">
               <video
-                playsinline
-                autoplay
-                muted="true"
+                playsInline
+                autoPlay
+                muted
                 loop
                 className="bgvideo"
                 width="x"
@@ -117,11 +118,6 @@ const Landing = () => {
                 This is the revolution
                 {/* <hr className="h-line mb-3 w-50 mx-auto" /> */}
               </div>
-              {/* <div className="position-relative mx-auto ">
-                <a href="/" id="btn-gra" className="btn-gra shadow-lg">
-                  join us
-                </a>
-              </div> */}
               <button className="btn mx-auto custom-btn font-weight-bold shadow-sm">
                 JOIN US
               </button>
@@ -146,11 +142,12 @@ const Landing = () => {
                 style={{ borderRadius: "20px" }}
                 data-aos="zoom-in"
               >
-                <i
-                  className="fa fa-shopping-cart mx-auto mb-3 fa-3x mt-3 primary-color"
-                  aria-hidden="true"
-                />
+                {/* <img src={s1} alt="wallet" width="200px" className="mx-auto" /> */}
                 <div className="card-body">
+                  <i
+                    className="fa fa-expand mx-auto mb-3 fa-3x mt-3 primary-color"
+                    aria-hidden="true"
+                  />
                   <h4 className="mb-3 text-center">Expand your business</h4>
                   <p className="text-muted">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -166,11 +163,11 @@ const Landing = () => {
                 style={{ borderRadius: "20px" }}
                 data-aos="zoom-in"
               >
-                <i
-                  className="fa fa-laptop primary-color mx-auto mb-3 fa-3x mt-3"
-                  aria-hidden="true"
-                />
                 <div className="card-body">
+                  <i
+                    className="fa fa-laptop primary-color mx-auto mb-3 fa-3x mt-3"
+                    aria-hidden="true"
+                  />
                   <h4 className="mb-3 text-center">DApp development</h4>
                   <p className="text-muted">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -187,11 +184,11 @@ const Landing = () => {
                 style={{ borderRadius: "20px" }}
                 data-aos="zoom-in"
               >
-                <i
-                  className="fa fa-lock primary-color mx-auto mb-3 fa-3x mt-3"
-                  aria-hidden="true"
-                />
                 <div className="card-body">
+                  <i
+                    className="fa fa-link primary-color mx-auto mb-3 fa-3x mt-3"
+                    aria-hidden="true"
+                  />
                   <h4 className="mb-3 text-center text-nowrap">
                     Blockchain Consulting
                   </h4>
@@ -345,7 +342,7 @@ const Landing = () => {
       <section className="contact-us mb-5">
         <div className="container pb-5">
           <h2
-            class="section-heading text-center display-4"
+            className="section-heading text-center display-4"
             style={{ marginBottom: "100px" }}
           >
             CONTACT-US
@@ -361,53 +358,53 @@ const Landing = () => {
                 id="contact-form"
                 method="post"
                 action="#"
-                class="contact-form"
+                className="contact-form"
               >
-                <div class="controls">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="name">Your firstname *</label>
+                <div className="controls">
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <label htmlFor="name">Your firstname *</label>
                         <input
                           type="text"
                           name="name"
                           placeholder="Enter your firstname"
                           required="required"
-                          class="form-control"
+                          className="form-control"
                         />
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="surname">Your lastname *</label>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <label htmlFor="surname">Your lastname *</label>
                         <input
                           type="text"
                           name="surname"
                           placeholder="Enter your  lastname"
                           required="required"
-                          class="form-control"
+                          className="form-control"
                         />
                       </div>
                     </div>
                   </div>
-                  <div class="form-group">
-                    <label for="surname">Your email *</label>
+                  <div className="form-group">
+                    <label htmlFor="surname">Your email *</label>
                     <input
                       type="email"
                       name="email"
                       placeholder="Enter your  email"
                       required="required"
-                      class="form-control"
+                      className="form-control"
                     />
                   </div>
-                  <div class="form-group">
-                    <label for="surname">Your message for us *</label>
+                  <div className="form-group">
+                    <label htmlFor="surname">Your message for us *</label>
                     <textarea
                       rows="4"
                       name="message"
                       placeholder="Enter your message"
                       required="required"
-                      class="form-control"
+                      className="form-control"
                     ></textarea>
                   </div>
                   <button className="btn custom-btn2 shadow-sm btn-block">
