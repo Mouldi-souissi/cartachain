@@ -95,20 +95,22 @@ const Landing = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="hero-video mx-auto">
-              <video
-                playsInline
-                autoPlay
-                muted
-                loop
-                className="bgvideo"
-                width="x"
-                height="y"
-                id="videoId"
-                border="none"
-                poster="true"
-              >
-                <source src={network} type="video/mp4" />
-              </video>
+              {network && (
+                <video
+                  playsInline
+                  autoPlay
+                  muted
+                  loop
+                  className="bgvideo"
+                  width="x"
+                  height="y"
+                  id="videoId"
+                  border="none"
+                  poster="true"
+                >
+                  <source src={network} type="video/mp4" />
+                </video>
+              )}
             </div>
             <div
               className="col-lg-12 col-md-12 col-sm-12 col-xs-12 position-absolute hero-bg"
