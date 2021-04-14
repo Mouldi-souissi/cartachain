@@ -24,6 +24,22 @@ const Landing = () => {
       }
     });
   }, []);
+
+  // show up-btn
+  useEffect(() => {
+    let btn = document.querySelector(".go-up");
+    window.onscroll = () => {
+      if (
+        document.body.scrollTop > 700 ||
+        document.documentElement.scrollTop > 700
+      ) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+  }, []);
+
   return (
     <div>
       {/* navbar */}
@@ -420,6 +436,18 @@ const Landing = () => {
           </div>
         </div>
       </section>
+      {/* scroll top button */}
+      <div
+        className="go-up"
+        onClick={() =>
+          window.scroll({
+            top: 0,
+            behavior: "smooth",
+          })
+        }
+      >
+        <i className="fa fa-arrow-up" aria-hidden="true"></i>
+      </div>
       {/* footer */}
       <footer className="footer bg-dark py-4">
         {/* <hr className="mt-0" /> */}
