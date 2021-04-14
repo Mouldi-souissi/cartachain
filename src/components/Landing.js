@@ -223,9 +223,11 @@ const Landing = () => {
             </div>
             <div className="video-container" data-aos="fade-in">
               <img src={monitor} className="monitor mt-5" alt="laptop" />
-              <video controls className="video mt-5">
-                <source src={video} type="video/mp4" />
-              </video>
+              {video && (
+                <video controls className="video mt-5">
+                  <source src={video} type="video/mp4" />
+                </video>
+              )}
             </div>
           </div>
         </div>
