@@ -9,7 +9,7 @@ import facebook from "../assets/facebook.png";
 import insta from "../assets/insta.png";
 import twitter from "../assets/twitter.png";
 import network from "../assets/network.mp4";
-import contact from "../assets/contact.jpg";
+import contact from "../assets/contact2.jpg";
 
 const Landing = () => {
   // video auto play
@@ -113,9 +113,9 @@ const Landing = () => {
               className="col-lg-12 col-md-12 col-sm-12 col-xs-12 position-absolute hero-bg"
               style={{ top: "50%" }}
             >
-              <div className="display-4 hero-text">
+              <div className="display-4 hero-text mb-3">
                 This is the revolution
-                <hr className="h-line mb-3 w-50 mx-auto" />
+                {/* <hr className="h-line mb-3 w-50 mx-auto" /> */}
               </div>
               {/* <div className="position-relative mx-auto ">
                 <a href="/" id="btn-gra" className="btn-gra shadow-lg">
@@ -130,11 +130,15 @@ const Landing = () => {
         </div>
       </section>
       {/* services */}
-      <section className="services album mb-5 mt-0" id="services">
+      <section className="services mb-5 mt-0" id="services">
         <div className="container">
-          <div className="text-center" style={{ marginBottom: "80px" }}>
-            <h2 className="section-heading pt-5 display-4">SERVICES</h2>
-          </div>
+          <h2
+            className="section-heading display-4"
+            style={{ margin: "80px 0" }}
+          >
+            SERVICES
+          </h2>
+
           <div className="row mt-5">
             <div className="col-lg-4">
               <div
@@ -143,7 +147,7 @@ const Landing = () => {
                 data-aos="zoom-in"
               >
                 <i
-                  className="fa fa-shopping-cart text-primary mx-auto mb-3 fa-3x mt-3"
+                  className="fa fa-shopping-cart mx-auto mb-3 fa-3x mt-3 primary-color"
                   aria-hidden="true"
                 />
                 <div className="card-body">
@@ -163,7 +167,7 @@ const Landing = () => {
                 data-aos="zoom-in"
               >
                 <i
-                  className="fa fa-laptop text-primary mx-auto mb-3 fa-3x mt-3"
+                  className="fa fa-laptop primary-color mx-auto mb-3 fa-3x mt-3"
                   aria-hidden="true"
                 />
                 <div className="card-body">
@@ -184,15 +188,16 @@ const Landing = () => {
                 data-aos="zoom-in"
               >
                 <i
-                  className="fa fa-lock text-primary mx-auto mb-3 fa-3x mt-3"
+                  className="fa fa-lock primary-color mx-auto mb-3 fa-3x mt-3"
                   aria-hidden="true"
                 />
                 <div className="card-body">
-                  <h4 className="mb-3 text-center">Blockchain Consulting</h4>
+                  <h4 className="mb-3 text-center text-nowrap">
+                    Blockchain Consulting
+                  </h4>
                   <p className="text-muted">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Minima maxime quam architecto quo inventore harum ex magni,
-                    dicta impedit.
+                    Minima maxime quam architecto quo inventore, dicta impedit.
                   </p>
                 </div>
               </div>
@@ -220,43 +225,20 @@ const Landing = () => {
               />
             </div>
             <div className="video-container" data-aos="fade-in">
-              <img src={monitor} className="monitor" alt="laptop" />
-              <video controls className="video">
+              <img src={monitor} className="monitor mt-5" alt="laptop" />
+              <video controls className="video mt-5">
                 <source src={video} type="video/mp4" />
               </video>
             </div>
-            <svg
-              className="waves"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1440 320"
-            >
-              <path
-                fill="#0099ff"
-                fill-opacity="1"
-                d="M0,288L48,293.3C96,299,192,309,288,282.7C384,256,480,192,576,181.3C672,171,768,213,864,240C960,267,1056,277,1152,250.7C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-              ></path>
-            </svg>
           </div>
         </div>
       </section>
       {/* about us */}
-      <section className="about-us pb-5 position-relative">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-          className="wave2"
-        >
-          <path
-            fill="#0099ff"
-            fill-opacity="1"
-            d="M0,224L40,202.7C80,181,160,139,240,138.7C320,139,400,181,480,208C560,235,640,245,720,218.7C800,192,880,128,960,133.3C1040,139,1120,213,1200,218.7C1280,224,1360,160,1400,128L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
-          ></path>
-        </svg>
-
+      <section className="about-us pb-5">
         <div className="container">
           <div
-            className="display-4 text-center text-black about-text"
-            style={{ marginBottom: "100px" }}
+            className="display-4 text-center section-heading"
+            style={{ marginBottom: "150px" }}
           >
             ABOUT US
           </div>
@@ -265,8 +247,8 @@ const Landing = () => {
             data-aos="fade-left"
             style={{ marginBottom: "100px", borderRadius: "20px" }}
           >
-            <div className="col-md-7">
-              <h2 className="featurette-heading mb-5 font-weight-bold ">
+            <div className="col-md-6">
+              <h2 className="featurette-heading mb-5 font-weight-bold section-lines">
                 Expand your business
               </h2>
               <p className="lead text-justify">
@@ -284,13 +266,13 @@ const Landing = () => {
                 processes, adapt, innovate and lead through Blockchain.
               </p>
             </div>
-            <div className="col-md-5 my-auto">
+            <div className="col-md-6 my-auto">
               <img
                 src={Feature1}
                 alt="feature"
                 className="img-fluid"
-                width="400"
-                height="400"
+                width="500"
+                height="500"
               />
             </div>
           </div>
@@ -300,8 +282,8 @@ const Landing = () => {
             data-aos="fade-right"
             style={{ marginBottom: "100px", borderRadius: "20px" }}
           >
-            <div className="col-md-7 order-md-2">
-              <h2 className="featurette-heading  font-weight-bold mb-5 ">
+            <div className="col-md-6 order-md-2">
+              <h2 className="featurette-heading font-weight-bold mb-5 section-lines">
                 Blockchain Consulting
               </h2>
               <p className="lead text-justify">
@@ -318,7 +300,7 @@ const Landing = () => {
                 most importantly with your customers.
               </p>
             </div>
-            <div className="col-md-5 order-md-1 mb-5 my-auto">
+            <div className="col-md-6 order-md-1 mb-5 my-auto">
               <img
                 src={Feature2}
                 alt="feature"
@@ -334,8 +316,8 @@ const Landing = () => {
             data-aos="fade-left"
             style={{ borderRadius: "20px" }}
           >
-            <div className="col-md-7">
-              <h2 className="featurette-heading font-weight-bold mb-5">
+            <div className="col-md-6">
+              <h2 className="featurette-heading font-weight-bold mb-5 section-lines">
                 DApp development
               </h2>
 
@@ -347,7 +329,7 @@ const Landing = () => {
                 they’re more reliable than traditional applications.
               </p>
             </div>
-            <div className="col-md-5 mt-5 my-auto">
+            <div className="col-md-6 mt-5 my-auto">
               <img
                 src={Feature3}
                 alt="feature"
@@ -361,23 +343,20 @@ const Landing = () => {
       </section>
       {/* contact us */}
       <section className="contact-us mb-5">
-        <div className="container-fluid  pb-5">
+        <div className="container pb-5">
           <h2
-            class="heading text-center display-4"
+            class="section-heading text-center display-4"
             style={{ marginBottom: "100px" }}
           >
             CONTACT-US
           </h2>
-          <div className="row">
-            <div className="col-lg-6">
-              <img
-                src={contact}
-                alt="contact"
-                className="img-responsive mb-5 rounded"
-                width="500px"
-              />
+          <div className="row contact-card">
+            <div className="col-lg-6 px-0">
+              <div className="contact-img-container">
+                <img src={contact} alt="contact" className="mb-5 contact-img" />
+              </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 p-5">
               <form
                 id="contact-form"
                 method="post"
@@ -431,7 +410,9 @@ const Landing = () => {
                       class="form-control"
                     ></textarea>
                   </div>
-                  <button className="btn custom-btn shadow-sm">Send</button>
+                  <button className="btn custom-btn2 shadow-sm btn-block">
+                    Send
+                  </button>
                 </div>
               </form>
             </div>
