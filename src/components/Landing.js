@@ -143,11 +143,11 @@ const Landing = () => {
         </div>
       </section>
       {/* services */}
-      <section className="services mb-5 mt-0" id="services">
+      <section className="services">
         <div className="container">
           <h2
             className="section-heading display-4"
-            style={{ margin: "80px 0" }}
+            style={{ marginBottom: "100px" }}
           >
             SERVICES
           </h2>
@@ -159,7 +159,7 @@ const Landing = () => {
                   <i className="fa fa-expand fa-3x" aria-hidden="true" />
                 </div>
                 <h4 className="pt-3">
-                  <span className="text-muted font-weight-bold mr-1">
+                  <span className="text-black font-weight-bold mr-1">
                     Expand
                   </span>
                   your business
@@ -172,7 +172,7 @@ const Landing = () => {
                   <i className="fa fa-laptop fa-3x" aria-hidden="true" />
                 </div>
                 <h4 className="pt-3">
-                  <span className="text-muted font-weight-bold mr-1">DApp</span>
+                  <span className="text-black font-weight-bold mr-1">DApp</span>
                   development
                 </h4>
               </div>
@@ -184,7 +184,7 @@ const Landing = () => {
                   <i className="fa fa-link fa-3x" aria-hidden="true" />
                 </div>
                 <h4 className="pt-3">
-                  <span className="text-muted font-weight-bold mr-1">
+                  <span className="text-black font-weight-bold mr-1">
                     Blockchain
                   </span>
                   Consulting
@@ -197,7 +197,7 @@ const Landing = () => {
       {/* video */}
       <section className="video-section">
         <div className="container-fluid">
-          <div className="row py-5">
+          <div className="row pt-5">
             <div
               className="col-md-6 my-auto video-text py-5"
               data-aos="fade-right"
@@ -229,7 +229,7 @@ const Landing = () => {
         <div className="container">
           <div
             className="display-4 text-center section-heading"
-            style={{ marginBottom: "150px" }}
+            style={{ margin: "100px 0" }}
           >
             ABOUT US
           </div>
