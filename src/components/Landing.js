@@ -10,6 +10,7 @@ import insta from "../assets/insta.png";
 import twitter from "../assets/twitter.png";
 import network from "../assets/network.mp4";
 import contact from "../assets/contact2.jpg";
+import logo from "../assets/logo.png";
 
 const Landing = () => {
   // video auto play
@@ -43,12 +44,13 @@ const Landing = () => {
     <div>
       {/* navbar */}
       <header className="header">
-        <nav className="navbar navbar-expand-lg fixed-top py-3">
+        <nav className="navbar navbar-expand-lg fixed-top py-1">
           <div className="container ">
             <a
               href="/"
               className="navbar-brand text-uppercase font-weight-bold"
             >
+              <img alt="logo" src={logo} height="80px" />
               Cartachain
             </a>
             <button
@@ -213,7 +215,11 @@ const Landing = () => {
                 style={{ marginLeft: "50px" }}
               />
             </div>
-            <div className="video-container" data-aos="fade-in">
+            <div
+              className="video-container"
+              data-aos="fade-in"
+              style={{ marginBottom: "100px" }}
+            >
               <img src={monitor} className="monitor mt-5" alt="laptop" />
               {video && (
                 <video controls className="video mt-5">
@@ -229,7 +235,7 @@ const Landing = () => {
         <div className="container">
           <div
             className="display-4 text-center section-heading"
-            style={{ margin: "100px 0" }}
+            style={{ marginBottom: "100px" }}
           >
             ABOUT US
           </div>
@@ -411,7 +417,7 @@ const Landing = () => {
         </div>
       </section>
       {/* footer */}
-      <footer className="footer bg-dark py-4">
+      <footer className="footer py-4">
         {/* <hr className="mt-0" /> */}
         <div className="container-fluid">
           <div className="row">
@@ -439,8 +445,12 @@ const Landing = () => {
                 © Cartachain 2021. All Rights Reserved.
               </p>
             </div>
-            <div className="col-lg-6 my-auto h-100 text-center">
+
+            <div className="col-lg-5 my-auto h-100 text-center">
               <ul className="list-inline mb-0">
+                <div className="h3 text-white list-inline-item pr-3 my-auto">
+                  Follow Us
+                </div>
                 <li className="list-inline-item">
                   <a href="https://www.facebook.com">
                     {/* <i className="fa fa-facebook fa-2x fa-fw"></i> */}
