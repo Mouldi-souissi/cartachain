@@ -10,7 +10,6 @@ import insta from "../assets/insta.png";
 import twitter from "../assets/twitter.png";
 import network from "../assets/network.mp4";
 import contact from "../assets/contact2.jpg";
-// import s1 from "../assets/s1.gif";
 
 const Landing = () => {
   // video auto play
@@ -155,66 +154,41 @@ const Landing = () => {
 
           <div className="row mt-5">
             <div className="col-lg-4">
-              <div
-                className="card mb-4 shadow p-4 effect"
-                style={{ borderRadius: "20px" }}
-                data-aos="zoom-in"
-              >
-                {/* <img src={s1} alt="wallet" width="200px" className="mx-auto" /> */}
-                <div className="card-body">
-                  <i
-                    className="fa fa-expand mx-auto mb-3 fa-3x mt-3 primary-color"
-                    aria-hidden="true"
-                  />
-                  <h4 className="mb-3 text-center">Expand your business</h4>
-                  <p className="text-muted">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Minima maxime quam architecto quo inventore harum ex magni,
-                    dicta impedit.
-                  </p>
+              <div className="service" data-aos="zoom-in">
+                <div className="text-center icon-container">
+                  <i className="fa fa-expand fa-3x" aria-hidden="true" />
                 </div>
+                <h4 className="pt-3">
+                  <span className="text-muted font-weight-bold mr-1">
+                    Expand
+                  </span>
+                  your business
+                </h4>
               </div>
             </div>
             <div className="col-lg-4">
-              <div
-                className="card mb-4 shadow p-4"
-                style={{ borderRadius: "20px" }}
-                data-aos="zoom-in"
-              >
-                <div className="card-body">
-                  <i
-                    className="fa fa-laptop primary-color mx-auto mb-3 fa-3x mt-3"
-                    aria-hidden="true"
-                  />
-                  <h4 className="mb-3 text-center">DApp development</h4>
-                  <p className="text-muted">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Minima maxime quam architecto quo inventore harum ex magni,
-                    dicta impedit.
-                  </p>
+              <div className="service" data-aos="zoom-in">
+                <div className="text-center icon-container">
+                  <i className="fa fa-laptop fa-3x" aria-hidden="true" />
                 </div>
+                <h4 className="pt-3">
+                  <span className="text-muted font-weight-bold mr-1">DApp</span>
+                  development
+                </h4>
               </div>
             </div>
 
             <div className="col-lg-4">
-              <div
-                className="card mb-4 shadow p-4"
-                style={{ borderRadius: "20px" }}
-                data-aos="zoom-in"
-              >
-                <div className="card-body">
-                  <i
-                    className="fa fa-link primary-color mx-auto mb-3 fa-3x mt-3"
-                    aria-hidden="true"
-                  />
-                  <h4 className="mb-3 text-center text-nowrap">
-                    Blockchain Consulting
-                  </h4>
-                  <p className="text-muted">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Minima maxime quam architecto quo inventore, dicta impedit.
-                  </p>
+              <div className="service" data-aos="zoom-in">
+                <div className="text-center icon-container">
+                  <i className="fa fa-link fa-3x" aria-hidden="true" />
                 </div>
+                <h4 className="pt-3">
+                  <span className="text-muted font-weight-bold mr-1">
+                    Blockchain
+                  </span>
+                  Consulting
+                </h4>
               </div>
             </div>
           </div>
@@ -436,18 +410,6 @@ const Landing = () => {
           </div>
         </div>
       </section>
-      {/* scroll top button */}
-      <div
-        className="go-up"
-        onClick={() =>
-          window.scroll({
-            top: 0,
-            behavior: "smooth",
-          })
-        }
-      >
-        <i className="fa fa-arrow-up" aria-hidden="true"></i>
-      </div>
       {/* footer */}
       <footer className="footer bg-dark py-4">
         {/* <hr className="mt-0" /> */}
@@ -512,6 +474,18 @@ const Landing = () => {
           </div>
         </div>
       </footer>
+      {/* scroll top button */}
+      <div
+        className="go-up"
+        onClick={() =>
+          window.scroll({
+            top: 0,
+            behavior: "smooth",
+          })
+        }
+      >
+        <i className="fa fa-arrow-up" aria-hidden="true"></i>
+      </div>
     </div>
   );
 };

@@ -38,8 +38,8 @@ body {
 .go-up {
   display: none;
   position: fixed;
-  bottom: 40px;
-  right: 30px;
+  bottom: 15px;
+  right: 15px;
   z-index: 99;
   border: none;
   outline: none;
@@ -217,13 +217,37 @@ video:focus {
   width: 100%;
   margin-top: 50px;
 }
-.services .card {
+.services .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.services .icon-container {
+  /* border: 1px solid rgba(128, 128, 128, 0.37); */
+  background: #fff;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #03a9f4, #03f4e8);
+  color: white;
+  text-shadow: 2px 2px 5px #03a9f4;
+  filter: drop-shadow(2px 3px 3px #03a9f4);
+}
+
+/* .services .card {
   transform: skewX(-5deg) skewY(-5deg) !important;
   transition: transform 2s;
 }
 .services .card-body {
   transform: skewX(5deg) skewY(5deg) !important;
-}
+} */
 .services .fa-link {
   transform: rotate(90deg);
 }
