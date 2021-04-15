@@ -221,7 +221,7 @@ video:focus {
   flex-direction: column;
   align-items: center;
   margin-bottom: 100px;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   cursor: pointer;
 }
 .services .icon-container {
@@ -238,6 +238,11 @@ video:focus {
   color: white;
   text-shadow: 2px 2px 5px #03a9f4;
   filter: drop-shadow(2px 3px 3px #03a9f4);
+  position: relative;
+}
+.service-icon {
+  max-width: 65px;
+  max-height: 65px;
 }
 
 /* .services .card {

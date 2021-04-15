@@ -5,12 +5,15 @@ import arrow from "../assets/arrow.gif";
 import Feature1 from "../assets/f1.svg";
 import Feature2 from "../assets/f2.svg";
 import Feature3 from "../assets/f3.svg";
+import Feature4 from "../assets/f4.svg";
 import facebook from "../assets/facebook.png";
 import insta from "../assets/insta.png";
 import twitter from "../assets/twitter.png";
 import network from "../assets/network.mp4";
 import contact from "../assets/contact2.jpg";
 import logo from "../assets/logo.png";
+import s1 from "../assets/s1.png";
+import s4 from "../assets/s4.png";
 
 const Landing = () => {
   // video auto play
@@ -30,8 +33,8 @@ const Landing = () => {
     let btn = document.querySelector(".go-up");
     window.onscroll = () => {
       if (
-        document.body.scrollTop > 700 ||
-        document.documentElement.scrollTop > 700
+        document.body.scrollTop > 900 ||
+        document.documentElement.scrollTop > 900
       ) {
         btn.style.display = "block";
       } else {
@@ -155,42 +158,56 @@ const Landing = () => {
           </h2>
 
           <div className="row mt-5">
-            <div className="col-lg-4">
+            <div className="col-lg-3">
               <div className="service" data-aos="zoom-in">
                 <div className="text-center icon-container">
                   <i className="fa fa-expand fa-3x" aria-hidden="true" />
                 </div>
-                <h4 className="pt-3">
+                <h5 className="pt-3">
                   <span className="text-black font-weight-bold mr-1">
                     Expand
                   </span>
                   your business
-                </h4>
+                </h5>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-3">
               <div className="service" data-aos="zoom-in">
                 <div className="text-center icon-container">
-                  <i className="fa fa-laptop fa-3x" aria-hidden="true" />
+                  <img alt="blocchain" src={s1} className="service-icon" />
+                  {/* <i className="fa fa-link fa-3x" aria-hidden="true" /> */}
                 </div>
-                <h4 className="pt-3">
-                  <span className="text-black font-weight-bold mr-1">DApp</span>
-                  development
-                </h4>
-              </div>
-            </div>
-
-            <div className="col-lg-4">
-              <div className="service" data-aos="zoom-in">
-                <div className="text-center icon-container">
-                  <i className="fa fa-link fa-3x" aria-hidden="true" />
-                </div>
-                <h4 className="pt-3">
+                <h5 className="pt-3">
                   <span className="text-black font-weight-bold mr-1">
                     Blockchain
                   </span>
                   Consulting
-                </h4>
+                </h5>
+              </div>
+            </div>
+            <div className="col-lg-3">
+              <div className="service" data-aos="zoom-in">
+                <div className="text-center icon-container">
+                  <i className="fa fa-laptop fa-3x" aria-hidden="true" />
+                </div>
+                <h5 className="pt-3">
+                  <span className="text-black font-weight-bold mr-1">DApp</span>
+                  development
+                </h5>
+              </div>
+            </div>
+            <div className="col-lg-3">
+              <div className="service" data-aos="zoom-in">
+                <div className="text-center icon-container">
+                  <img alt="blocchain" src={s4} className="service-icon" />
+                  {/* <i className="fa fa-link fa-3x" aria-hidden="true" /> */}
+                </div>
+                <h5 className="pt-3">
+                  <span className="text-black font-weight-bold mr-1">
+                    Smart
+                  </span>
+                  Contract
+                </h5>
               </div>
             </div>
           </div>
@@ -242,7 +259,7 @@ const Landing = () => {
           <div
             className="row featurette d-flex align-items-center mt-5"
             data-aos="fade-left"
-            style={{ marginBottom: "100px", borderRadius: "20px" }}
+            style={{ marginBottom: "100px" }}
           >
             <div className="col-md-6">
               <h2 className="featurette-heading mb-5 font-weight-bold section-lines">
@@ -277,7 +294,7 @@ const Landing = () => {
           <div
             className="row featurette d-flex align-items-center"
             data-aos="fade-right"
-            style={{ marginBottom: "100px", borderRadius: "20px" }}
+            style={{ marginBottom: "100px" }}
           >
             <div className="col-md-6 order-md-2">
               <h2 className="featurette-heading font-weight-bold mb-5 section-lines">
@@ -309,9 +326,9 @@ const Landing = () => {
           </div>
 
           <div
-            className="row featurette d-flex align-items-center mb-5"
+            className="row featurette d-flex align-items-center"
             data-aos="fade-left"
-            style={{ borderRadius: "20px" }}
+            style={{ marginBottom: "100px" }}
           >
             <div className="col-md-6">
               <h2 className="featurette-heading font-weight-bold mb-5 section-lines">
@@ -329,6 +346,35 @@ const Landing = () => {
             <div className="col-md-6 mt-5 my-auto">
               <img
                 src={Feature3}
+                alt="feature"
+                className="img-fluid"
+                width="400"
+                height="400"
+              />
+            </div>
+          </div>
+          <div
+            className="row featurette d-flex align-items-center"
+            data-aos="fade-right"
+            style={{ marginBottom: "50px" }}
+          >
+            <div className="col-md-6 order-md-2">
+              <h2 className="featurette-heading font-weight-bold mb-5 section-lines">
+                Smart Contract
+              </h2>
+              <p className="lead text-justify">
+                As smart contracts require extensive technical knowledge for the
+                best real-case usage,Carthachain provides smart contract
+                development and auditing services with the highest standards.
+                Smart contracts are widely used by the advanced business sectors
+                to keep up the contract between the two parties of business and
+                avoid business conflicts with the safe and unaltered smart
+                contracts.
+              </p>
+            </div>
+            <div className="col-md-6 order-md-1 mt-5 my-auto">
+              <img
+                src={Feature4}
                 alt="feature"
                 className="img-fluid"
                 width="400"
