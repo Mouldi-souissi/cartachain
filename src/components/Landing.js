@@ -156,12 +156,12 @@ const Landing = () => {
           </h2>
 
           <div className="row mt-5">
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6">
               <div className="service" data-aos="zoom-in">
                 <div className="text-center icon-container">
                   <i className="fa fa-expand fa-3x" aria-hidden="true" />
                 </div>
-                <h5 className="pt-3">
+                <h5 className="pt-3 text-nowrap">
                   <span className="text-black font-weight-bold mr-1">
                     Expand
                   </span>
@@ -169,7 +169,7 @@ const Landing = () => {
                 </h5>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6">
               <div className="service" data-aos="zoom-in">
                 <div className="text-center icon-container">
                   <img alt="blocchain" src={s1} className="service-icon" />
@@ -183,7 +183,7 @@ const Landing = () => {
                 </h5>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6">
               <div className="service" data-aos="zoom-in">
                 <div className="text-center icon-container">
                   <i className="fa fa-laptop fa-3x" aria-hidden="true" />
@@ -194,7 +194,7 @@ const Landing = () => {
                 </h5>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6">
               <div className="service" data-aos="zoom-in">
                 <div className="text-center icon-container">
                   <img alt="blocchain" src={s4} className="service-icon" />
@@ -212,11 +212,11 @@ const Landing = () => {
         </div>
       </section>
       {/* video */}
-      {/* <section className="video-section">
+      <section className="video-section d-flex align-items-center justify-content-center">
         <div className="container-fluid">
           <div className="row pt-5">
             <div
-              className="col-md-6 my-auto video-text py-5"
+              className="col-md-6 my-auto video-text pt-5 mx-auto"
               data-aos="fade-right"
             >
               <h4 className="text-center text-secondary font-weight-bold display-4">
@@ -247,7 +247,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       {/* about us */}
       <section className="about-us pb-5">
         <div className="container">
