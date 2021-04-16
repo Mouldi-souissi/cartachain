@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-// import video from "../assets/cartachain.mp4";
+import video from "../assets/cartachain.mp4";
 import monitor from "../assets/laptop.png";
 import arrow from "../assets/arrow.gif";
 import Feature1 from "../assets/f1.svg";
@@ -9,7 +9,7 @@ import Feature4 from "../assets/f4.svg";
 import facebook from "../assets/facebook.png";
 import insta from "../assets/insta.png";
 import twitter from "../assets/twitter.png";
-// import network from "../assets/network.mp4";
+import network from "../assets/network.mp4";
 import contact from "../assets/contact2.jpg";
 import logo from "../assets/logo.png";
 import s1 from "../assets/s1.png";
@@ -127,10 +127,7 @@ const Landing = () => {
                 border="none"
                 poster="true"
               >
-                <source
-                  src="https://r2---sn-hgn7rn7y.c.drive.google.com/videoplayback?expire=1618563123&ei=8xd5YMjMH87s8gTWs7vIDA&ip=197.14.133.94&cp=QVRGWkZfUlFQRFhPOlN6QWgxalF3cjhONzBHckhpdkh1b1VrT2FIYnpHLXl0VVUydF9YQlU5eXk&id=700d9c08f25ac602&itag=22&source=webdrive&requiressl=yes&mh=xx&mm=32&mn=sn-hgn7rn7y&ms=su&mv=u&mvi=2&pl=20&ttl=transient&susc=dr&driveid=1WGrVlfa_72pNZi3ziWWdFEt_6PW6oE9U&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=30.093&lmt=1618546083891763&mt=1618548476&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRQIhAMQZJkJsGXwoDzZyb2SPQ-TfGSidgNNceNYp5QCC3U8tAiB1KPwMvZ7CIIX5GoNyicXSRPysAlZia4e5W-cOAK19bA==&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIgK2OlkMvPJ87NnVoYjOih78zB3HKVqO6K6TTdF3mCQSICIQDTvgBeJdp0rhuOjH568V3KtQ8q8FgrJPNlflT5RAPl4A==&cpn=_qOFsNFsb36iPrRu&c=WEB_EMBEDDED_PLAYER&cver=1.20210414.1.0"
-                  type="video/mp4"
-                />
+                <source src={network} type="video/mp4" />
               </video>
             </div>
             <div
@@ -215,7 +212,7 @@ const Landing = () => {
         </div>
       </section>
       {/* video */}
-      <section className="video-section">
+      {/* <section className="video-section">
         <div className="container-fluid">
           <div className="row pt-5">
             <div
@@ -242,14 +239,15 @@ const Landing = () => {
 
               <video controls className="video mt-5">
                 <source
-                  src="https://r1---sn-hgn7yn7z.c.drive.google.com/videoplayback?expire=1618563005&ei=fRd5YN2iGI308gTJnJvICA&ip=197.14.133.94&cp=QVRGWkZfUlBORlhPOlN6QWgwaFN3cjhONzBHcUZrdkh1b1VrT3pGZHpHLXl0VVUxcl9YQlU5eXk&id=7780fce319ffe7ac&itag=18&source=webdrive&requiressl=yes&mh=I5&mm=32&mn=sn-hgn7yn7z&ms=su&mv=u&mvi=1&pl=20&ttl=transient&susc=dr&driveid=1dSc6d_BAORuQ1z1f2xtTJ9jRDcsynCPm&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=157.895&lmt=1618540489490355&mt=1618547534&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRQIgGbNxWhDBy9r7bPfo8ecqVrl9mIhXZglWGDblBlnjr0cCIQDBtWbiE3eJtYukJNr8HOuf_ePDG1_6cc6ZnodpI42GXA==&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIgVmHtALZfzShApb2HcXq7rAxAccuUCaki-vvdhekINIQCIQCiL76oGXE2AXs_Fqla51duxMXJdJIwX0ue2-0DbYt-cA==&cpn=83BgrH7tpSGhRwMg&c=WEB_EMBEDDED_PLAYER&cver=1.20210414.1.0"
+                  // src="https://r1---sn-hgn7yn7z.c.drive.google.com/videoplayback?expire=1618563005&ei=fRd5YN2iGI308gTJnJvICA&ip=197.14.133.94&cp=QVRGWkZfUlBORlhPOlN6QWgwaFN3cjhONzBHcUZrdkh1b1VrT3pGZHpHLXl0VVUxcl9YQlU5eXk&id=7780fce319ffe7ac&itag=18&source=webdrive&requiressl=yes&mh=I5&mm=32&mn=sn-hgn7yn7z&ms=su&mv=u&mvi=1&pl=20&ttl=transient&susc=dr&driveid=1dSc6d_BAORuQ1z1f2xtTJ9jRDcsynCPm&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=157.895&lmt=1618540489490355&mt=1618547534&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRQIgGbNxWhDBy9r7bPfo8ecqVrl9mIhXZglWGDblBlnjr0cCIQDBtWbiE3eJtYukJNr8HOuf_ePDG1_6cc6ZnodpI42GXA==&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIgVmHtALZfzShApb2HcXq7rAxAccuUCaki-vvdhekINIQCIQCiL76oGXE2AXs_Fqla51duxMXJdJIwX0ue2-0DbYt-cA==&cpn=83BgrH7tpSGhRwMg&c=WEB_EMBEDDED_PLAYER&cver=1.20210414.1.0"
+                  src={video}
                   type="video/mp4"
                 />
               </video>
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* about us */}
       <section className="about-us pb-5">
         <div className="container">
