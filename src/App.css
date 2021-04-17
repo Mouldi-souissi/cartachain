@@ -317,3 +317,11 @@ video:focus {
 .footer img:hover {
   transform: translateY(-5px);
 }
+
+.medium {
+  background-color: white;
+  border-radius: 50%;
+  padding-bottom: 2px;
+  padding-left: 1px;
+  padding-right: 1px;
+}

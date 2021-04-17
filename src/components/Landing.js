@@ -7,10 +7,11 @@ import Feature2 from "../assets/f2.svg";
 import Feature3 from "../assets/f3.svg";
 import Feature4 from "../assets/f4.svg";
 import facebook from "../assets/facebook.png";
-import insta from "../assets/insta.png";
+import youtube from "../assets/youtube.png";
 import twitter from "../assets/twitter.png";
 import network from "../assets/network.mp4";
 import contact from "../assets/contact2.jpg";
+import medium from "../assets/medium.png";
 import logo from "../assets/logo.png";
 import s1 from "../assets/s1.png";
 import s4 from "../assets/s4.png";
@@ -627,6 +628,9 @@ const Landing = () => {
                   </a>
                 </li>
               </ul>
+              <p className="small text-white mb-1">
+                E-mail : contact@carthachain.com
+              </p>
               <p className="small mb-4 mb-lg-0 text-white">
                 © Cartachain 2021. All Rights Reserved.
               </p>
@@ -634,35 +638,39 @@ const Landing = () => {
 
             <div className="col-lg-5 my-auto h-100 text-center">
               <ul className="list-inline mb-0">
-                <div className="h3 text-white list-inline-item pr-3 my-auto">
+                <div className="h3 text-white list-inline-item pr-3">
                   Follow Us
                 </div>
+
                 <li className="list-inline-item">
                   <a href="https://www.facebook.com/Carthachain-101296274804596">
-                    {/* <i className="fa fa-facebook fa-2x fa-fw"></i> */}
-                    <img
-                      src={facebook}
-                      height="60px"
-                      width="60px"
-                      alt="facebbok"
-                    />
+                    <img src={facebook} alt="facebbok" />
                   </a>
                 </li>
                 <li className="list-inline-item">
                   <a href="https://twitter.com/Carthachain">
-                    {/* <i className="fa fa-twitter fa-2x fa-fw"></i> */}
+                    <img src={twitter} alt="twitter" />
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="https://www.youtube.com/channel/UCRXkVPnxxrIOFARoyMdbmyA/">
                     <img
-                      src={twitter}
-                      height="60px"
-                      width="60px"
-                      alt="twitter"
+                      src={youtube}
+                      alt="youtube"
+                      width="48px"
+                      height="48px"
                     />
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href="https://www.instagram.com/">
-                    {/* <i className="fa fa-instagram fa-2x fa-fw"></i> */}
-                    <img src={insta} height="60px" width="60px" alt="insta" />
+                  <a href="https://medium.com/@carthachain">
+                    <img
+                      src={medium}
+                      height="48px"
+                      width="48px"
+                      alt="medium"
+                      className="medium"
+                    />
                   </a>
                 </li>
               </ul>
