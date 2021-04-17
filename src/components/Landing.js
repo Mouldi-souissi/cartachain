@@ -638,7 +638,7 @@ const Landing = () => {
                   Follow Us
                 </div>
                 <li className="list-inline-item">
-                  <a href="https://www.facebook.com">
+                  <a href="https://www.facebook.com/Carthachain-101296274804596">
                     {/* <i className="fa fa-facebook fa-2x fa-fw"></i> */}
                     <img
                       src={facebook}
@@ -649,7 +649,7 @@ const Landing = () => {
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a href=" https://twitter.com/">
+                  <a href="https://twitter.com/Carthachain">
                     {/* <i className="fa fa-twitter fa-2x fa-fw"></i> */}
                     <img
                       src={twitter}
