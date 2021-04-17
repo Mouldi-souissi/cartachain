@@ -22,14 +22,19 @@ import t4 from "../assets/pgas.png";
 const Landing = () => {
   // video auto play
   useEffect(() => {
-    window.addEventListener("load", async () => {
+    const autoplay = async () => {
       let video = document.getElementById("videoId");
       try {
         await video.play();
       } catch (err) {
         video.controls = true;
       }
-    });
+    };
+    window.addEventListener("load", autoplay);
+    // cleaning on unmount
+    return () => {
+      window.removeEventListener("load", autoplay);
+    };
   }, []);
 
   // show up-btn
@@ -396,7 +401,7 @@ const Landing = () => {
             className="section-heading text-center display-4"
             style={{ marginBottom: "100px" }}
           >
-            TECHNOLOGIES
+            TECHNOLOGY
           </h2>
           <div className="row">
             <div className="col-md-12">
