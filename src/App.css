@@ -269,6 +269,17 @@ video:focus {
   border-radius: 5px;
   margin: 20px 0;
 }
+/* technologies */
+.technologies .card {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  /* border: 3px solid #03a9f4; */
+  /* filter: drop-shadow(3px 5px 3px #ffdf00); */
+}
 
 /*contact-us  */
 .contact-card {

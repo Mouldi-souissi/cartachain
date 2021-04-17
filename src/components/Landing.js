@@ -14,6 +14,9 @@ import contact from "../assets/contact2.jpg";
 import logo from "../assets/logo.png";
 import s1 from "../assets/s1.png";
 import s4 from "../assets/s4.png";
+import t1 from "../assets/f4.png";
+import t2 from "../assets/blockchain.png";
+import t3 from "../assets/t3.png";
 
 const Landing = () => {
   // video auto play
@@ -381,6 +384,38 @@ const Landing = () => {
                 width="400"
                 height="400"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* technologies*/}
+      <section className="technologies mb-5">
+        <div className="container pb-5">
+          <h2
+            className="section-heading text-center display-4"
+            style={{ marginBottom: "100px" }}
+          >
+            TECHNOLOGIES
+          </h2>
+          <div className="row">
+            <div className="col-lg-2 mb-5 card p-4 shadow mx-auto">
+              <img src={t1} alt="smart contract" width="150px" />
+            </div>
+            <div className="col-lg-2 mb-5 card p-4 shadow mx-auto">
+              <img src={t2} alt="blockchain" width="100px" />
+            </div>
+            <div
+              className="col-lg-2 mb-5 card p-4 shadow mx-auto"
+              data-toggle="tooltip"
+              data-placement="right"
+              title="Working with Solidity demands a lot of skill, talent and experience to get a fully automated and well protected app, we can custom make solutions that maximize the effectiveness of your existing environment. Every custom blockchain solution designed and developed by our team is truly unique to our client's needs.
+Blockchain Technology will help you regulate, track and facilitate payments and other business processes with suppliers, partners, contractors, and most importantly with your customers."
+            >
+              <img src={t3} alt="solidity" width="150px" />
+            </div>
+            <div className="col-lg-2 mb-5 card p-4 shadow mx-auto">
+              <h3>Proof of Authority</h3>
+              <p className="text-center">(PoA)</p>
             </div>
           </div>
         </div>
