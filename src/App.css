@@ -40,7 +40,7 @@ body {
 .go-up {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 80px;
   right: 20px;
   z-index: 99;
   border: solid rgba(0, 0, 0, 0.342) 1px;
