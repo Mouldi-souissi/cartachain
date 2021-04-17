@@ -17,6 +17,7 @@ import s4 from "../assets/s4.png";
 import t1 from "../assets/f4.png";
 import t2 from "../assets/blockchain.png";
 import t3 from "../assets/t3.png";
+import t4 from "../assets/pgas.png";
 
 const Landing = () => {
   // video auto play
@@ -51,7 +52,7 @@ const Landing = () => {
       {/* navbar */}
       <header className="header">
         <nav className="navbar navbar-expand-lg fixed-top py-1">
-          <div className="container ">
+          <div className="container-fluid">
             <a
               href="/"
               className="navbar-brand text-uppercase font-weight-bold"
@@ -398,22 +399,108 @@ const Landing = () => {
             TECHNOLOGIES
           </h2>
           <div className="row">
-            <div className="col-lg-2 mb-5 card p-4 shadow mx-auto">
+            <div className="col-md-12">
+              <h2 className="mb-5 font-weight-bold section-lines">Solidity</h2>
+              <p className="legend lead mb-5" data-aos="flip-right">
+                Working with Solidity demands a lot of skill, talent and
+                experience to get a fully automated and well protected app, we
+                can custom make solutions that maximize the effectiveness of
+                your existing environment. Every custom blockchain solution
+                designed and developed by our team is truly unique to our
+                client's needs. Blockchain Technology will help you regulate,
+                track and facilitate payments and other business processes with
+                suppliers, partners, contractors, and most importantly with your
+                customers.
+              </p>
+              <h2 className="mb-5 font-weight-bold section-lines">
+                Blockchain
+              </h2>
+              <div className="legend lead mb-5" data-aos="flip-right">
+                Blockchain is a database that records digital transactions in
+                secure and transparent way. It holds lot of data types such as
+                transactions and other informations from smart contracts, all
+                these information are stored in the blockchain in an indelible
+                and immutable way, they are also viewable and accessible by
+                everyone. So every one can know how much any address holds, all
+                its previous transactions and the data transfered between smart
+                contracts. These blockchain features will make fraud more
+                difficult, facilitate accounting process (especialy for
+                financial and banking domain) and provide provable fairness
+                between all entities .
+              </div>
+              <h2 className="mb-5 font-weight-bold section-lines">Pegasus</h2>
+              <div className="legend lead mb-5" data-aos="flip-right">
+                Pegasus (Pgas) is a digital currency issued by Carthachain, it
+                reflects the value of the company, used to pay for some services
+                or to have discounts on others, note that it will be used in
+                most of our services & products. Its transactions are very fast
+                (just few seconds).
+              </div>
+              <h2 className="mb-5 font-weight-bold section-lines">
+                Cartachain Blockchain
+              </h2>
+              <div className="legend lead mb-5" data-aos="flip-right">
+                Carthachain Blockchain is a very fast transparent blockchain,
+                and it is only us and our trusted partners who will check for
+                transactions and write them in the blockchain permanently and
+                forever so there is no chance for a 51% Attack that is possible
+                on "Proof Of Work" blockchains, that's why DigiCash Blockchain
+                is more secure than Ethereum, Bitcoin ...
+              </div>
+              <h2 className="mb-5 font-weight-bold section-lines">
+                Proof of Authority
+              </h2>
+              <div className="legend lead mb-5" data-aos="flip-right">
+                Proof of Authority (PoA) : The PoW consensus algorithm used by
+                Bitcoin is kind of reliable and secure today. However, it is not
+                really scalable. Bitcoin, as well as other PoW-based
+                blockchains, have limited performance in terms of transactions
+                per second (TPS). Such limitation is related to the fact that
+                Bitcoin relies on a distributed network of nodes, which need to
+                reach consensus and agree on the current states of the
+                blockchain. In PoA-based networks, like Carthachain Blockchain,
+                transactions and blocks are validated by approved accounts,
+                known as validators, preventing attacks like DoS, 51% blockchain
+                attacks... The Proof of Authority model relies on a limited
+                number of block validators and this is what makes it a highly
+                scalable system. Blocks and transactions are verified by
+                pre-approved participants, who act as moderators of the system.
+                PoA addresses enterprise's common concerns of inefficient
+                upgrade and waste of energy. To make Carthachain Blockchain
+                completely decentralized, we give the opportunty to any investor
+                to become a validator in our system after verification.
+                Candidatures will be announced and opened later on our social
+                media channels.
+              </div>
+            </div>
+            <div
+              className="col-lg-2 mb-5 card p-4 shadow mx-auto"
+              data-aos="slide-up"
+            >
               <img src={t1} alt="smart contract" width="150px" />
             </div>
-            <div className="col-lg-2 mb-5 card p-4 shadow mx-auto">
+            <div
+              className="col-lg-2 mb-5 card p-4 shadow mx-auto"
+              data-aos="slide-up"
+            >
               <img src={t2} alt="blockchain" width="100px" />
             </div>
             <div
               className="col-lg-2 mb-5 card p-4 shadow mx-auto"
-              data-toggle="tooltip"
-              data-placement="right"
-              title="Working with Solidity demands a lot of skill, talent and experience to get a fully automated and well protected app, we can custom make solutions that maximize the effectiveness of your existing environment. Every custom blockchain solution designed and developed by our team is truly unique to our client's needs.
-Blockchain Technology will help you regulate, track and facilitate payments and other business processes with suppliers, partners, contractors, and most importantly with your customers."
+              data-aos="slide-up"
             >
               <img src={t3} alt="solidity" width="150px" />
             </div>
-            <div className="col-lg-2 mb-5 card p-4 shadow mx-auto">
+            <div
+              className="col-lg-2 mb-5 card p-4 shadow mx-auto"
+              data-aos="slide-up"
+            >
+              <img src={t4} alt="solidity" width="150px" />
+            </div>
+            <div
+              className="col-lg-2 mb-5 card p-4 shadow mx-auto"
+              data-aos="slide-up"
+            >
               <h3>Proof of Authority</h3>
               <p className="text-center">(PoA)</p>
             </div>

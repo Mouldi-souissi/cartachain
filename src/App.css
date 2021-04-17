@@ -270,6 +270,10 @@ video:focus {
   margin: 20px 0;
 }
 /* technologies */
+.legend {
+  font-family: arial, sans-serif;
+  color: grey;
+}
 .technologies .card {
   border-radius: 20px;
   display: flex;
