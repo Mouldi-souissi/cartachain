@@ -9,6 +9,7 @@ import Feature4 from "../assets/f4.svg";
 import facebook from "../assets/facebook.png";
 import youtube from "../assets/youtube.png";
 import twitter from "../assets/twitter.png";
+import discord from "../assets/discord.png";
 import network from "../assets/network.mp4";
 import contact from "../assets/contact2.jpg";
 import medium from "../assets/medium.png";
@@ -145,7 +146,7 @@ const Landing = () => {
               style={{ top: "50%" }}
             >
               <div className="display-4 hero-text mb-3">
-                This is the revolution
+                The financial revolution
                 {/* <hr className="h-line mb-3 w-50 mx-auto" /> */}
               </div>
               <button className="btn mx-auto custom-btn font-weight-bold shadow-sm">
@@ -636,11 +637,11 @@ const Landing = () => {
               </p>
             </div>
 
-            <div className="col-lg-5 my-auto h-100 text-center">
+            <div className="col-lg-6 my-auto h-100 text-center">
               <ul className="list-inline mb-0">
-                <div className="h3 text-white list-inline-item pr-3">
+                {/* <div className="h3 text-white list-inline-item pr-3">
                   Follow Us
-                </div>
+                </div> */}
 
                 <li className="list-inline-item">
                   <a href="https://www.facebook.com/Carthachain-101296274804596">
@@ -657,8 +658,18 @@ const Landing = () => {
                     <img
                       src={youtube}
                       alt="youtube"
-                      width="48px"
-                      height="48px"
+                      width="50px"
+                      height="50px"
+                    />
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a href="https://discord.gg/GyrYSVK">
+                    <img
+                      src={discord}
+                      height="51px"
+                      width="51px"
+                      alt="discord"
                     />
                   </a>
                 </li>
@@ -666,8 +677,8 @@ const Landing = () => {
                   <a href="https://medium.com/@carthachain">
                     <img
                       src={medium}
-                      height="48px"
-                      width="48px"
+                      height="47px"
+                      width="47px"
                       alt="medium"
                       className="medium"
                     />
